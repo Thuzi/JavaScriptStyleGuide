@@ -1,0 +1,49 @@
+1) variable declarations
+ 1.1) single var declaration at top of function (scope)
+ 1.2) alphabetize variable declarations
+ 1.3) use full names, not abbreviations
+ 1.4) tab indent declarations for alignment
+	1.4.1) convert tabs to spaces in your editor
+ 1.5) multiple property assignments should break across lines 
+
+2) functions 
+ 2.1) I/O bound functions take callbacks
+ 2.2) return err as the first argument
+
+3) modules
+ 3.1) export constructor functions, not assign methods into arguments
+
+4) controllers
+ 4.1) bubble controller errors with `next` middleware
+ 4.2) actions should match Rails (http://guides.rubyonrails.org/routing.html)
+
+5) naming conventions
+node
+ 5.1) models: 		foo.js
+ 5.2) controllers: 	foos-controllers.js
+ 5.3) views: 		foos-index.ejs
+ 
+backbone
+ 5.4) models: 		foo.js
+ 5.5) collections: 	foos-collection.js
+ 5.6) routers: 		foos-router.js
+ 5.7) views: 		foos-index.js
+ 5.8) templates: 	foos-index.jst
+
+6) database
+ 6.1) use mongoose (http://mongoosejs.com/)
+
+7) template engine
+ 7.1) handlebars (http://handlebarsjs.com/)
+ 
+8) styles
+ 8.1) Twitter Bootstrap (http://twitter.github.com/bootstrap/)
+
+9) buttons
+ 9.1) button text should be contained in markup
+
+ 
+
+Helpful Resouces:
+
+http://google-styleguide.googlecode.com/svn/trunk/javascriptguide.xml
