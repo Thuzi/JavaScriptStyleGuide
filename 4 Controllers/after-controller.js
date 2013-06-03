@@ -15,21 +15,21 @@ var AfterControlller = function () {
 // actions
 //
 
-	this.index = function (req, res, next) {
-		Event.findForList(function (err, docs) {
-			if (err) return next(err);
+    this.index = function (req, res, next) {
+        Event.findForList(function (err, docs) {
+            if (err) return next(err);
 
-			res.json(docs);
-		});
-	},
+            res.json(docs);
+        });
+    },
 
-	this.show = function (req, res, next) {
-		Event.findOne(function (err, docs) {
-			if (err) return next(err);
+    this.show = function (req, res, next) {
+        Event.findOne(function (err, docs) {
+            if (err) return next(err);
 
-			res.json(docs);
-		});
-	}
+            res.json(docs);
+        });
+    }
 };
 
 exports.AfterControlller = AfterControlller;
